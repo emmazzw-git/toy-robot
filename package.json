@@ -1,0 +1,54 @@
+{
+  "name": "toy-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsnd --respawn src/index.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "jest src/** --coverage",
+    "e2e": "jest e2e/**"
+  },
+  "author": "Emma Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.10.0",
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "request": "^2.88.2",
+    "supertest": "^5.0.0",
+    "ts-jest": "^26.4.0",
+    "ts-node-dev": "^1.0.0-pre.63"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "roots": [
+      "<rootDir>/"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}
