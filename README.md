@@ -16,7 +16,12 @@ This app simulate a robot roaming on a 5 by 5 grid table. The command is sent th
 To be able to let he robot roam, we need to send a valid starting point. 
 
 This App will report the robot out of the table if the robot is placed out of the table. 
-This App will let the robot roam if the robot is placed on the table. After the robot is on the table, it roams to `North`, `South`, `East`, and `South` directions. When the robot roams to the border of the table, any further MOVE command will keep the robot stay on the table.
+
+This App will let the robot roam if the robot is placed on the table. 
+
+After the robot is on the table, it roams to `North`, `South`, `East`, and `South` directions. 
+
+When the robot roams to the border of the table, any further MOVE command will keep the robot stay on the table.
 
 The robot has two status `OnTable` and `OutOfTable`. 
 
